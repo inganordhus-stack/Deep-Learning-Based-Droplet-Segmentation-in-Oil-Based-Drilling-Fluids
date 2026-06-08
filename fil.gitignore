@@ -1,0 +1,18 @@
+# Dataset
+Dataset/
+Original/
+Test set/
+Review/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# VS Code
+.vscode/
+
+# Generated results
+runs/
