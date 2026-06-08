@@ -20,7 +20,7 @@ The model was trained on manually annotated microscopy images of oil-based drill
 
 ## Example Prediction
 
-![Example segmentation](images/example_prediction.png)
+![Example segmentation](362_HAD_test_overlay.png)
 
 Example microscopy image (left), ground-truth annotation (center), and model prediction (right).
 
