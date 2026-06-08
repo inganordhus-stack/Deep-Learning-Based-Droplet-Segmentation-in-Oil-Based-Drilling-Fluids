@@ -1,0 +1,17 @@
+Dataset/
+Original/
+Test set/
+Review/
+
+runs/
+
+Latest_Models/
+Models_so_far/
+
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+*.pth
+*.pt
+*.ckpt
