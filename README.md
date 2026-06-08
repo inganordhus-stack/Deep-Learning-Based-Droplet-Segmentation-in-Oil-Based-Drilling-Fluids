@@ -4,6 +4,34 @@ This repository contains the source code developed as part of a Master's thesis 
 
 The project uses a U-Net architecture with a ResNet34 encoder implemented in PyTorch and segmentation_models_pytorch. The trained models are used to segment dispersed water droplets in microscopy images of OBDF emulsions, after which droplet size statistics such as mean diameter, D10, D50, D90, D32, span, coefficient of variation, and dispersed-phase fraction can be estimated automatically.
 
+## Selected Results
+
+The best-performing model achieved the following average segmentation performance on the held-out test dataset:
+
+| Metric | Value |
+|----------|----------|
+| Dice Score | 0.797 |
+| IoU | 0.667 |
+| Precision | 0.829 |
+| Recall | 0.786 |
+| Pixel Accuracy | 0.961 |
+
+The model was trained on manually annotated microscopy images of oil-based drilling fluids and demonstrated robustness across different droplet morphologies and imaging conditions. Additional experiments showed improved generalization when stronger intensity-based augmentations were applied during training.
+
+## Example Prediction
+
+![Example segmentation](images/example_prediction.png)
+
+Example microscopy image (left), ground-truth annotation (center), and model prediction (right).
+
+## Key Findings
+
+- Deep learning-based semantic segmentation can successfully identify water droplets in OBDF microscopy images.
+- The best model achieved a mean Dice score of 0.80 on the test dataset.
+- Strong image augmentations improved robustness and generalization.
+- The developed workflow enables automatic extraction of droplet size distributions (DSDs) from microscopy images in approximately 2 seconds per full-scale image.
+
+
 ## Repository Structure
 
 ```text
